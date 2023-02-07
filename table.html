@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+</head>
+
+<body>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">SL</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Subject Code</th>
+                <th scope="col">Th. Marks</th>
+                <th scope="col">Prac. Marks</th>
+                <th scope="col">Total Marks</th>
+                <th scope="col">Grade</th>
+                <th scope="col">Points</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!--Bangla 1st-->
+            <tr>
+                <td scope="col">1</td>
+                <td scope="col">Bangla 1st Paper</td>
+                <td scope="col">1001</td>
+                <td scope="col"><input type="text" id="thm1"></td>
+                <td scope="col"><input type="text" id="prac1"></td>
+                <td scope="col"><input type="text" id="tm1"></td>
+                <td scope="col"><input type="text" id="g1"></td>
+                <td scope="col"><input type="text" id="p1"></td>
+                <td scope="col"><button onclick="calculation1();">Result</button></td>
+            </tr>
+
+            <!--Bangla 2nd-->
+            <tr>
+                <td scope="col">2</td>
+                <td scope="col">Bangla 2nd Paper</td>
+                <td scope="col">1002</td>
+                <td scope="col"><input type="text" id="thm2"></td>
+                <td scope="col"><input type="text" id="prac2"></td>
+                <td scope="col"><input type="text" id="tm2"></td>
+                <td scope="col"><input type="text" id="g2"></td>
+                <td scope="col"><input type="text" id="p2"></td>
+                <td scope="col"><button onclick="calculation2();">Result</button></td>
+            </tr>
+
+            <!--English 1st-->
+            <tr>
+                <td scope="col">3</td>
+                <td scope="col">English 1st Paper</td>
+                <td scope="col">1003</td>
+                <td scope="col"><input type="text" id="thm3"></td>
+                <td scope="col"><input type="text" id="prac3"></td>
+                <td scope="col"><input type="text" id="tm3"></td>
+                <td scope="col"><input type="text" id="g3"></td>
+                <td scope="col"><input type="text" id="p3"></td>
+                <td scope="col"><button onclick="calculation3();">Result</button></td>
+            </tr>
+            <!--English 2nd-->
+            <tr>
+                <td scope="col">4</td>
+                <td scope="col">English 2nd Paper</td>
+                <td scope="col">1004</td>
+                <td scope="col"><input type="text" id="thm4"></td>
+                <td scope="col"><input type="text" id="prac4"></td>
+                <td scope="col"><input type="text" id="tm4"></td>
+                <td scope="col"><input type="text" id="g4"></td>
+                <td scope="col"><input type="text" id="p4"></td>
+                <td scope="col"><button onclick="calculation4();">Result</button></td>
+            </tr>
+            <!--Higher math 1st-->
+            <tr>
+                <td scope="col">5</td>
+                <td scope="col">Higher Math 1st Paper</td>
+                <td scope="col">1005</td>
+                <td scope="col"><input type="text" id="thm5"></td>
+                <td scope="col"><input type="text" id="prac5"></td>
+                <td scope="col"><input type="text" id="tm5"></td>
+                <td scope="col"><input type="text" id="g5"></td>
+                <td scope="col"><input type="text" id="p5"></td>
+                <td scope="col"><button onclick="calculation5();">Result</button></td>
+            </tr>
+            <!--Higher math 2nd-->
+            <tr>
+                <td scope="col">6</td>
+                <td scope="col">Higher Math Paper</td>
+                <td scope="col">1006</td>
+                <td scope="col"><input type="text" id="thm6"></td>
+                <td scope="col"><input type="text" id="prac6"></td>
+                <td scope="col"><input type="text" id="tm6"></td>
+                <td scope="col"><input type="text" id="g6"></td>
+                <td scope="col"><input type="text" id="p6"></td>
+                <td scope="col"><button onclick="calculation6();">Result</button></td>
+            </tr>
+
+            <!--Physics 1st-->
+            <tr>
+                <td scope="col">7</td>
+                <td scope="col">Physics 1st Paper</td>
+                <td scope="col">1007</td>
+                <td scope="col"><input type="text" id="thm7"></td>
+                <td scope="col"><input type="text" id="prac7"></td>
+                <td scope="col"><input type="text" id="tm7"></td>
+                <td scope="col"><input type="text" id="g7"></td>
+                <td scope="col"><input type="text" id="p7"></td>
+                <td scope="col"><button onclick="calculation7();">Result</button></td>
+            </tr>
+            <!--Physics 2nd-->
+            <tr>
+                <td scope="col">8</td>
+                <td scope="col">Physics 2nd Paper</td>
+                <td scope="col">1008</td>
+                <td scope="col"><input type="text" id="thm8"></td>
+                <td scope="col"><input type="text" id="prac8"></td>
+                <td scope="col"><input type="text" id="tm8"></td>
+                <td scope="col"><input type="text" id="g8"></td>
+                <td scope="col"><input type="text" id="p8"></td>
+                <td scope="col"><button onclick="calculation8();">Result</button></td>
+            </tr>
+            <!--Chemistry 1st-->
+            <tr>
+                <td scope="col">9</td>
+                <td scope="col">Chemistry 1st Paper</td>
+                <td scope="col">1009</td>
+                <td scope="col"><input type="text" id="thm9"></td>
+                <td scope="col"><input type="text" id="prac9"></td>
+                <td scope="col"><input type="text" id="tm9"></td>
+                <td scope="col"><input type="text" id="g9"></td>
+                <td scope="col"><input type="text" id="p9"></td>
+                <td scope="col"><button onclick="calculation9();">Result</button></td>
+            </tr>
+            <!--Chemistry 2nd-->
+            <tr>
+                <td scope="col">10</td>
+                <td scope="col">Chemistry 2nd Paper</td>
+                <td scope="col">1010</td>
+                <td scope="col"><input type="text" id="thm10"></td>
+                <td scope="col"><input type="text" id="prac10"></td>
+                <td scope="col"><input type="text" id="tm10"></td>
+                <td scope="col"><input type="text" id="g10"></td>
+                <td scope="col"><input type="text" id="p10"></td>
+                <td scope="col"><button onclick="calculation10();">Result</button></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <script src="table.js"></script>
+
+
+
+    <link rel="stylesheet" href="assets/bootstrap.min.js">
+</body>
+
+</html>
